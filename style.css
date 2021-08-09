@@ -151,6 +151,7 @@ body {
 }
 
 .article_content {
+  font-weight: 300;
   font-size: 14px;
   color: #5d5d5d;
   padding-left: 17px;
@@ -304,4 +305,87 @@ body {
 .footer_seti {
   list-style-type: none;
   margin-left: 7px;
+  background: #FFFFFF;
+  height: 32px;
+  width: 32px;
+  /* color: #000000; */
+  text-align: center;
+  /*  */
+  display: table-cell;
+  vertical-align: middle;
+  /*  */
+}
+
+.footer_seti:hover {
+  background: #F16D7F;
+  color: rgba(255, 255, 255, 1);
+
+}
+
+/* КАТАЛОГ */
+.new {
+  height: 148px;
+  background: #F8F3F4;
+
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 51px;
+}
+
+.new a {
+  text-decoration: none;
+  margin-bottom: 51px;
+}
+
+.text_red {
+  color: #F16D7F;
+}
+
+.text_heading {
+
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.crumbs_text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+}
+
+.crumbs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.crumbs a {
+  padding: 10px 0px 10px 0px;
+}
+
+.catalog_border_conteiner {
+  height: 200px;
+}
+
+.filter a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  padding-top: 51px;
+}
+
+.scroll_bar {
+  border: 1px solid #EBEBEB;
+  margin-top: 49px;
+  height: 43px;
+  margin-bottom: 97px;
+  width: 283px;
+  align-items: center;
+}
+
+.bar_list {
+  text-decoration: none;
 }
