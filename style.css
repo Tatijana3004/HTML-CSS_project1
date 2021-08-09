@@ -318,8 +318,7 @@ body {
 
 .footer_seti:hover {
   background: #F16D7F;
-  color: rgba(255, 255, 255, 1);
-
+  /* color: rgba(255, 255, 255, 1); не работает*/
 }
 
 /* КАТАЛОГ */
