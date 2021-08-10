@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -14,7 +15,8 @@
         <div class="content">
             <div class="top">
                 <div class="conteiner">
-                    <ul class="header">
+<!-- Строка меню -->
+                    <ul class="header"> 
                         <div class="header_left">
                             <div>
                                 <li><a href="index.html"><img src="img/logo.svg" alt="logo"></a></li>
@@ -38,25 +40,37 @@
                     </ul>
                 </div>
             </div>
-                <div class="new">
-                    <div class="crumbs conteiner">
-                        <div>
-                            <a class="text_heading text_red" href="#">NEW ARRIVALS</a>
-                        </div>
-                        <div class="crumbs_text" >
-
-                            <!-- разнести по сторонам -->
-                            
-                            <a class="crumbs_text" href="#">HOME /<a class="crumbs_text" href="#"> MEN /</a> <a class="text_red" href="#">NEW ARRIVALS</a></a>
-                        </div>
-                    </div>                  
-                </div>
-        </div>
-            <div class="conteiner">                            
-                <div class="articles_block">
-                    <div class="filter">
-                        <a href="#">FILTER <img src="img/filter.svg" alt="filter"></a>
+<!-- заголовок страницы -->
+            <div class="new">
+                <div class="crumbs conteiner">
+                    <div>
+                        <a class="text_heading text_red" href="#">NEW ARRIVALS</a>
                     </div>
+                    
+<!-- Хлебные крошки -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="index.html">HOME /</a></li>
+                          <li class="breadcrumb-item"><a href="#">MEN /</a></li>
+                          <li class="breadcrumb-item text_red" aria-current="page">NEW ARRIVALS</li>
+                        </ol>
+                      </nav>
+                    
+                </div> 
+                                 
+            </div>
+<!-- Фильтры -->
+        <div class="conteiner">
+            <div class="filter">
+                <a href="#">FILTER <img src="img/filter.svg" alt="filter"></a> 
+            </div>
+            <div>
+                <!-- здесь должны быть фильтры выпадашки -->
+            </div> 
+        </div>    
+<!-- Контейнер с миникарточками товаров --> 
+            <div class="conteiner">                          
+                <div class="articles_block">
                     <div class="articles_blok">
                         <div class="article">
                             <img src="img/article1.svg" alt="article1">
@@ -115,7 +129,7 @@
                     </div>
                     <div class="scroll_bar">
                         <a href="#" class="bar_list"> - 1 2 3 4 6 ... 20 - </a>
-                       
+                    
                         <!-- 
                             ДОДЕЛАТЬ 
                                     прокрутку 
@@ -126,7 +140,9 @@
                 </div>
             </div>
         </div>
+        
     </div>
+    <!-- </div> -->
     <div class="footer">
         <div class="footer_top">
             <div class="conteiner">
