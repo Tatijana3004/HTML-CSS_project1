@@ -119,6 +119,10 @@ body {
   margin-bottom: 48px;
 }
 
+.articles_blok a {
+  text-decoration: none;
+}
+
 .heading_articles_block {
   font-size: 30px;
   color: #222222;
@@ -325,7 +329,6 @@ body {
 
 .footer_seti:hover {
   background: #F16D7F;
-  /* color: rgba(255, 255, 255, 1); не работает*/
 }
 
 /* КАТАЛОГ */
@@ -416,14 +419,10 @@ body {
 .d-block {
   width: 597px;
   height: 724px;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
 }
 
 .carousel-item {
   height: 777px;
-  /* align-items: center; */
   display: flex;
   background: #F7F7F7;
 }
@@ -435,8 +434,9 @@ body {
   width: 1141px;
   height: 601px;
   background: #FFFFFF;
-  border: 1px solid #F7F7F7;
+  border: 1px solid #c7c5c5;
   margin-top: -50px;
+  padding: 65px;
 }
 
 .heading_product {
@@ -459,14 +459,12 @@ body {
 }
 
 .heading_product h2 {
-  /* font-weight: 300; */
   font-size: 18px;
   line-height: 22px;
   color: #4D4D4D;
 }
 
 .heading_product p {
-  /* font-weight: 300; */
   font-size: 14px;
   line-height: 17px;
   color: #5E5E5E;
