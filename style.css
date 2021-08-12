@@ -400,9 +400,69 @@ body {
   color: #636363;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .bar_list:hover {
   color: #F16D7F;
+}
+
+/* КАРТОЧКА ТОВАРА */
+.conteiner_carousel {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.d-block {
+  width: 597px;
+  height: 724px;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.carousel-item {
+  height: 777px;
+  /* align-items: center; */
+  display: flex;
+  background: #F7F7F7;
+}
+
+.product_description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1141px;
+  height: 601px;
+  background: #FFFFFF;
+  border: 1px solid #F7F7F7;
+  margin-top: -50px;
+}
+
+.heading_product {
+  text-align: center;
+}
+
+.heading_product h4 {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  margin-bottom: 12px;
+}
+
+.line_product {
+  /* не работает !!! */
+  width: 63px;
+  height: 3px;
+  /* border-bottom: 3px;
+  background: #EF5B70; */
+  margin-bottom: 12px;
+}
+
+.heading_mini_product {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
 }
