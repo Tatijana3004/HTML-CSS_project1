@@ -490,3 +490,63 @@ body {
   background: #ffff;
   margin-top: 50px;
 }
+
+/* РЕГИСТРАЦИЯ */
+.registration {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  margin-bottom: 20px;
+  width: 360px;
+  height: 45px;
+  background: #FFFFFF;
+  padding: 15px;
+  border: 1px solid #B1B1B1;
+}
+
+.name_input {
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+
+}
+
+.forma_registration {
+  display: flex;
+}
+
+.forma_registration p {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  width: 360px;
+}
+
+.button_registration {
+  padding: 16px;
+  background: #F16D7F;
+  width: 167px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  border: none;
+}
+
+.forma_registration {
+  margin-bottom: 96px;
+}
+
+.text_registration {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  width: 652px;
+  padding-left: 50px;
+}
