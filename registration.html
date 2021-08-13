@@ -17,7 +17,7 @@
                 <div class="conteiner">
 <!-- Строка меню -->
                     <ul class="header"> 
-                        <div class="header_left">
+                        <div class="header_left"> <!-- на всех страницах появляется отступ слева не могу понять почему-->
                             <div>
                                 <li><a href="index.html"><img src="img/logo.svg" alt="logo"></a></li>
                             </div>
@@ -39,8 +39,8 @@
                         </div>
                     </ul>
                 </div>
-            </div>
-<!-- заголовок страницы -->
+            </div>     
+<!-- заголовок страницы  ЗДЕСЬ ПОЧЕМУ-ТО ВОЗНИКАЕТ ВЕРХНИЙ ОТСТУП !!! не могу понять почему -->
             <div class="new">
                 <div class="crumbs conteiner">
                     <div>
@@ -52,9 +52,12 @@
             <div class="forma_registration">
             <form action="#">
                 <h3 class="name_input">Your Name</h3>
-                <input class="input text_input" type="text" placeholder="First Name"><br>
+                <input class="input text_input" type="text" placeholder="First Name">
                 <input class="input text_input" type="text" placeholder="Last Name"><br>
-<!-- здесь должны быть радиокнопки -->
+                <div class="form_radio">
+                    <input id="radio_male" type="radio"> <label for="radio_male">Male</label>
+                    <input id="radio_female" type="radio"> <label for="radio_female">Female</label>
+                </div>
                 <h3 class="name_input">Login details</h3>
                 <input class="input text_input" type="email" placeholder="Email"><br>
                 <input class="input text_input" type="password" placeholder="Password">

@@ -519,6 +519,13 @@ body {
   display: flex;
 }
 
+.form_radio label {
+  margin-top: 31px;
+  margin-right: 20px;
+  margin-left: 10px;
+  margin-bottom: 33px;
+}
+
 .forma_registration p {
   font-weight: 300;
   font-size: 13px;
@@ -549,4 +556,25 @@ body {
   color: #000000;
   width: 652px;
   padding-left: 50px;
+}
+
+.text_registration p {
+  margin-top: 22px;
+  margin-bottom: 21px;
+}
+
+.text_registration ul {
+  margin-left: -30px;
+}
+
+.text_registration li {
+  list-style-type: none;
+  margin-bottom: 16px;
+}
+
+.text_registration li:before {
+  list-style-type: none;
+  /* content: '✔  '; */
+  content: url(img/vector.svg);
+  margin-right: 23px;
 }
