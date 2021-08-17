@@ -99,8 +99,12 @@ body {
   font-size: 32px;
   border-left: 12px solid #F16D7F;
   padding-left: 16px;
-  width: 377px;
+  width: 450px;
   margin-right: 331px;
+}
+
+.top_baner_text_max {
+  font-size: 46px;
 }
 
 .colorpink {
