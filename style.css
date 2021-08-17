@@ -178,6 +178,11 @@ body {
   margin-top: 30px;
 }
 
+.article:hover {
+  transform: scale(1.05);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
 .article img:hover {
   filter: brightness(0.3);
 }
@@ -412,6 +417,10 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #636363;
+}
+
+.breadcrumb-item a:hover {
+  color: #F16D7F;
 }
 
 .new:hover {
