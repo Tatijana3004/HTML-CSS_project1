@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Registration</title>
+    <title>Card</title>
 </head>
 
 <body>
@@ -15,11 +16,10 @@
         <div class="content">
             <div class="top">
                 <div class="conteiner">
-<!-- Строка меню -->
-                    <ul class="header"> 
-                        <div class="header_left"> <!-- на всех страницах появляется отступ слева не могу понять почему-->
+                    <ul class="header">
+                        <div class="header_left"><!-- на всех страницах появляется отступ слева не могу понять почему-->
                             <div>
-                                <li><a href="index.html"><img src="img/logo.svg" alt="logo"></a></li>
+                                <li><a class="padding_header" href="index.html"><img src="img/logo.svg" alt="logo"></a></li>
                             </div>
                             <div class="search">
                                 <li>
@@ -33,60 +33,23 @@
                         </div>
                         <div class="header_right">
                             <div class="header_right_menu_lk_basket">
-                                <li><a href="#"><img src="img/img_menu.svg" alt="menu"></a></li>
+                                <li><a class="padding_header" href="#"><img src="img/img_menu.svg" alt="menu"></a></li>
                             </div>
                             <div class="header_right_menu_lk_basket">
-                                <li><a href="registration.html"><img src="img/lk.svg" alt="lk"></a></li>
+                                <li><a class="padding_header" href="registration.html"><img src="img/lk.svg" alt="lk"></a></li>
                             </div>
                             <div class="header_right_menu_lk_basket">
-                                <li><a href="card.html"><img src="img/basket.svg" alt="basket"></a></li>
+                                <li><a class="padding_header" href="#"><img src="img/basket.svg" alt="basket"></a></li>
                             </div>
                         </div>
                     </ul>
                 </div>
-            </div>     
-<!-- заголовок страницы  ЗДЕСЬ ПОЧЕМУ-ТО ВОЗНИКАЕТ ВЕРХНИЙ ОТСТУП !!! не могу понять почему -->
-            <div class="new">
-                <div class="crumbs conteiner">
-                    <div>
-                        <a class="text_heading text_red" href="#">REGISTRATION</a>
-                    </div>                   
-                </div>                  
             </div>
-        <div class="conteiner registration">
-            <div class="forma_registration">
-            <form action="#">
-                <h3 class="name_input">Your Name</h3>
-                <input class="input text_input" type="text" placeholder="First Name">
-                <input class="input text_input" type="text" placeholder="Last Name"><br>
-                <div class="form_radio">
-                    <input id="radio_male" type="radio"> <label for="radio_male">Male</label>
-                    <input id="radio_female" type="radio"> <label for="radio_female">Female</label>
-                </div>
-                <h3 class="name_input">Login details</h3>
-                <input class="input text_input" type="email" placeholder="Email"><br>
-                <input class="input text_input" type="password" placeholder="Password">
-                <p>
-                    Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
-                </p>
-                <button class="button_registration" type="submit">JOIN NOW &nbsp;&rarr;</button>
-            </form>
-            </div>
-            <div class="text_registration">
-                <h1>LOYALTY HAS ITS PERKS</h1>
-                <p>
-                    Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:
-                </p>
-                <ul>
-                    <li>15% off welcome offer</li>
-                    <li>Free shipping, returns and exchanges on all orders</li>
-                    <li>$10 off a purchase on your birthday</li>
-                    <li>Early access to products</li>
-                    <li>Exclusive offers & rewards</li>
-                </ul>
-            </div>
+            <div class="conteiner">
+                <h1>Здесь товары корзины</h1>
+
         </div>
-    
+    </div>
     <div class="footer">
         <div class="footer_top">
             <div class="conteiner">
@@ -127,6 +90,7 @@
                         </section>
                     </div>
                 </div>
+
             </div>
         </div>
         <div class="footer_bottom_fon">
@@ -139,7 +103,7 @@
                     </div>
                     <div class="footer_right">
                         <div class="footer_seti">
-<!-- шрифт иконки не работает -->
+<!-- ншрифт иконки не работает -->
                             <li><a href="#"><i class="fa-li fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
                         </div>
                         <div class="footer_seti">
