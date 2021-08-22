@@ -33,20 +33,8 @@
                             <div class="header_right_menu_lk_basket">
                                 <li><a class="padding_header" href="#"><img src="img/img_menu.svg" alt="menu"></a></li>
                             <!-- 
-CATEGORY
-    Accessories
-    Denim
-    Hoodies & Sweatshirts
-    Jackets & Coats
-    Polos
-    Shirts
-    Shoes
-    Sweaters & Knits
-    T-Shirts
-    Tanks
-BRAND
-DESIGNER
-                            -->
+
+                             -->
                             </div>
                             <div class="header_right_menu_lk_basket">
                                 <li><a class="padding_header" href="registration.html"><img src="img/lk.svg" alt="lk"></a></li>
@@ -80,10 +68,62 @@ DESIGNER
                             <!-- ЗДЕСЬ ДОЛЖЕН БЫТЬ ФИЛЬТР С ВЫПАДАШКАМИ -->
 <!-- Контейнер с миникарточками товаров --> 
             <div class="conteiner">   
-                <div class="filter">
+                <section class="filter">
                     <div class="filter_left filter_padding">
-                        <a href="#"><h1>FILTER</h1><img src="img/filter.svg" alt="filter"></a>
-                        
+                        <details class="details">
+                            <summary>
+                                <span class="details_span">FILTER</span>
+                                <i class="fa fa-filter" aria-hidden="true"></i>
+                            </summary>
+                            <details class="details">
+                                    <summary>
+                                        <span class="details_span_filter">CATEGORY</span>
+                                     </summary>
+                                    
+                                        <a href="#">Accessories</a> 
+                                        <a href="#">Denim</a>
+                                        <a href="#">Hoodies & Sweatshirts</a>
+                                        <a href="#">Jackets & Coats</a>
+                                        <a href="#">Polos</a>
+                                        <a href="#">Shirts</a>
+                                        <a href="#">Shoes</a>
+                                        <a href="#">Sweaters & Knits</a>
+                                        <a href="#">T-Shirts</a>
+                                        <a href="#">Tanks</a>
+                                    
+                            </details>    
+                            <details class="details">
+                                    <summary>
+                                        <span class="details_span_filter">BRAND</span>
+                                    </summary>
+                                        <a href="#">Accessories</a> 
+                                        <a href="#">Denim</a>
+                                        <a href="#">Hoodies & Sweatshirts</a>
+                                        <a href="#">Jackets & Coats</a>
+                                        <a href="#">Polos</a>
+                                        <a href="#">Shirts</a>
+                                        <a href="#">Shoes</a>
+                                        <a href="#">Sweaters & Knits</a>
+                                        <a href="#">T-Shirts</a>
+                                        <a href="#">Tanks</a>
+                            </details>
+                            <details class="details">
+                                <summary>
+                                    <span class="details_span_filter">DESIGNER</span>
+                                </summary>
+                                    <a href="#">Accessories</a> 
+                                    <a href="#">Denim</a>
+                                    <a href="#">Hoodies & Sweatshirts</a>
+                                    <a href="#">Jackets & Coats</a>
+                                    <a href="#">Polos</a>
+                                    <a href="#">Shirts</a>
+                                    <a href="#">Shoes</a>
+                                    <a href="#">Sweaters & Knits</a>
+                                    <a href="#">T-Shirts</a>
+                                    <a href="#">Tanks</a>
+                        </details>
+                        </details>
+  
                     </div>
                     <div class="filter_right">
                         <form action="#">
@@ -100,7 +140,6 @@ DESIGNER
                                     <a href="" class="menu_link_filter_right">SIZE &#709;</a>
                                     <div class="mega_box_filter_right">
                                         <div class="mega_item_filter_right">
-                                            <h3 class="mega_heading_filter_right"></h3>
                                             <a class="mega_link_filter_right" href="#">
                                                 <input type="checkbox">XS</a>
                                             <a class="mega_link_filter_right" href="#">
@@ -128,7 +167,7 @@ DESIGNER
                         <!--  -->
 <!--  -->
 
-                </div>
+                </section>
             </div>
 <!-- сделать корзины на карточках товара -->                       
                 <div class="articles_block">
@@ -201,7 +240,17 @@ DESIGNER
                         </a>                        
                     </div>
                     <div class="scroll_bar">
-                        <a href="#" class="bar_list"> - 1   2   3   4   6 ... 20 - </a>
+                        <ul class="bar_list conteiner">
+                            <li><a class="dontactive" href="#">&lt;</a></li>
+                            <li><a class="active" href="#">1</a></li>
+                            <li><a class="dontactive" href="#">2</a></li>
+                            <li><a class="dontactive" href="#">3</a></li>
+                            <li><a class="dontactive" href="#">4</a></li>
+                            <li><a class="dontactive" href="#">5</a></li>
+                            <li><a class="dontactive" href="#">...</a></li>
+                            <li><a class="dontactive" href="#">20</a></li> 
+                            <li><a class="dontactive" href="#">&gt;</a></li> 
+                        </ul>
                     
                         <!-- 
                             ДОДЕЛАТЬ 

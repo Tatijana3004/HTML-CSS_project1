@@ -14,7 +14,7 @@ body {
   max-width: 1140px;
   margin: 0 auto;
 }
-
+/* МЕНЮ САЙТА */
 .top {
   background: #222222;
 }
@@ -60,10 +60,6 @@ body {
   background: #222222;
   cursor: pointer;
 }
-/* 
-.search button:before {
-  color: #FFFFFF;
-} */
 
 .header_right {
   display: flex;
@@ -73,7 +69,42 @@ body {
 .header_right_menu_lk_basket {
   margin-left: 33px;
 }
+.mega_box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: stretch;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.mega_item {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  
+}
 
+.mega_heading {
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 235px;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 5px;
+}
+.mega_link {
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  margin-left: 54px;
+  
+}
+
+/* ГЛАВНАЯ СТРАНИЦА */
 .top_baner {
   background: #F1E4E6;
   display: flex;
@@ -146,7 +177,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+/* ГРУППА КАРТОЧЕК ТОВАРОВ */
 .articles_block_inside {
   display: flex;
   flex-wrap: wrap;
@@ -234,7 +265,7 @@ body {
   border: 1px solid #F16D7F;
   color: #FFFFFF;
 }
-
+/* ПОДВАЛ САЙТА */
 .footer_top {
   background: #222224;
   height: 341px;
@@ -381,7 +412,7 @@ body {
   color: #FFFFFF;
 }
 
-/* КАТАЛОГ */
+/* СТРАНИЦА КАТАЛОГ */
 .new {
   height: 148px;
   background: #F8F3F4;
@@ -441,6 +472,32 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.details {
+  display: flex;
+}
+details summary {
+  display: block; 
+}
+.details_span_filter {
+  display: flex;
+  border-left: 5px solid #F16D7F;
+  border-bottom: 1px solid #EBEBEB;
+  padding: 11px;
+  margin-top: 16px;
+  margin-bottom: 25px;
+}
+.details a {
+  padding: 0px 0px 11px 34px;
+}
+.details_open{
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
 .filter a {
   text-decoration: none;
   color: #000000;
@@ -481,6 +538,10 @@ margin-bottom: 0;
 .mega_link_filter_right {
   margin: 7px;
 }
+
+.mega_link_filter_right input {
+  margin: 10px;
+}
 .scroll_bar {
   width: 1140px;
   display: flex;
@@ -489,25 +550,40 @@ margin-bottom: 0;
 .bar_list {
   border: 1px solid #EBEBEB;
   margin-top: 49px;
+  width: 283px;
   height: 43px;
   margin-bottom: 97px;
-  width: 283px;
+  padding-left: 0;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.bar_list a {
   text-decoration: none;
+  padding: 5px;
+}
+.active {
+  color: #F16D7F;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
-  color: #636363;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.bar_list:hover {
+.dontactive {
+  color: #636363;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+
+}
+.bar_list a:hover {
   color: #F16D7F;
 }
 
-/* КАРТОЧКА ТОВАРА */
+/* СТРАНИЦА С КАРТОЧКОЙ ТОВАРА */
 .conteiner_carousel {
   max-width: 1600px;
   margin: 0 auto;
@@ -590,7 +666,7 @@ margin-bottom: 0;
   margin-top: 50px;
 }
 
-/* РЕГИСТРАЦИЯ */
+/* СТРАНИЦА РЕГИСТРАЦИИ */
 .registration {
   display: flex;
   justify-content: space-between;
@@ -611,7 +687,6 @@ margin-bottom: 0;
   font-size: 16px;
   line-height: 19px;
   color: #222222;
-
 }
 
 .forma_registration {
