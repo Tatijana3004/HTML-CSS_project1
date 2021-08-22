@@ -443,13 +443,17 @@ body {
 }
 .filter a {
   text-decoration: none;
-  font-size: 14px;
-  line-height: 17px;
   color: #000000;
   display: flex;
   align-items: center;
   /* justify-content: space-between; */
 }
+
+.filter a:hover { 
+  /* не меняется цвет картинки у фильтра */
+  color: #F16D7F;
+}
+
 .filter_left h1 {
 margin-right: 11px;
 margin-bottom: 0;
@@ -459,13 +463,23 @@ margin-bottom: 0;
   width:35px;
   height: 30px;
 }
-.filter_right {
+.menu_filter_right {
   display: flex;
   align-items: center;
   color: #6F6E6E;
+  justify-content: space-between;
+  list-style-type: none;
 }
-.filter_right div {
+.menu_link_filter_right {
   padding: 28px;
+}
+
+.mega_box_filter_right {
+  background: #FFFFFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.mega_link_filter_right {
+  margin: 7px;
 }
 .scroll_bar {
   width: 1140px;
