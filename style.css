@@ -3,10 +3,11 @@
 * {
   margin: 0;
   padding: 0;
+  outline: none;
 }
 
 body {
-  font-family: Lato;
+  font-family: Lato sans-serif;
   min-height: 100%;
 }
 
@@ -46,7 +47,7 @@ body {
   height: 42px;
   padding-left: 10px;
   border: 2px solid #222222;
-  outline: none;
+  /* outline: none; */
   background: #ffffff;
 }
 
@@ -58,7 +59,6 @@ body {
   height: 42px;
   border: none;
   background: #222222;
-  cursor: pointer;
 }
 
 .header_right {
@@ -79,6 +79,17 @@ body {
   display: flex;
   flex-direction: column;
 }
+.mega_item:before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  position: absolute;
+  top: -5px;
+  left: 25px;
+  transform: rotate(45deg);
+}
 
 .butoon_menu {
   position: relative;
@@ -91,8 +102,7 @@ body {
   line-height: 17px;
   color: #6f6e6e;
   padding-left: 20px;
-  transition: color 0.3s; /* плавная смена цвета */
-  cursor: pointer;
+  transition: color 0.3s;
 }
 
 .mega_item {
@@ -188,8 +198,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 32%;
+  width: 30%;
   position: relative;
+}
+.section_block:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: box-shadow 0.3s;
+  transform: scale(1.1);
 }
 
 .section_text {
@@ -215,6 +230,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.section_1_baner:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: box-shadow 0.3s;
+  transform: scale(1.1);
+}
+
 /* ГРУППА КАРТОЧЕК ТОВАРОВ (на всех страницах)*/
 .articles_block_inside {
   display: flex;
@@ -226,6 +248,9 @@ body {
 .articles_block_inside a {
   text-decoration: none;
 }
+/* .articles_block_inside:hover {
+  color: #f16d7f;
+} */
 
 .heading_articles_block {
   font-size: 30px;
@@ -252,10 +277,12 @@ body {
 .article:hover {
   transform: scale(1.05);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: box-shadow 0.3s;
 }
 
 .article img:hover {
   filter: brightness(0.3);
+  transition: filter 0.3s;
 }
 
 .article h4 {
@@ -350,6 +377,7 @@ body {
 .subscribe {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .face {
@@ -394,7 +422,7 @@ body {
   width: 256px;
   padding-left: 22px;
   margin-top: 32px;
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 23px 0px 0px 23px;
 }
 
 .button_submit {
@@ -404,7 +432,7 @@ body {
   width: 100px;
   padding: 7px;
   margin-left: -4px;
-  border-radius: 0px 20px 20px 0px;
+  border-radius: 0px 23px 23px 0px;
 }
 
 .footer_bottom_fon {
@@ -515,7 +543,7 @@ body {
 .box-shadow {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   background: #ffffff;
-  margin-top: -16px;
+
 }
 .filter {
   font-size: 14px;
@@ -545,6 +573,7 @@ body {
   width: 360px;
   margin-right: 30px;
   background: #ffffff;
+
 }
 
 .filter_right {
@@ -552,6 +581,7 @@ body {
   color: #6f6e6e;
   justify-content: space-between;
   position: relative;
+
 }
 
 .details {

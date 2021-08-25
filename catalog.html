@@ -22,7 +22,6 @@
             <!-- Строка меню -->
             <div class="header">
               <div class="header_left">
-                <!-- на всех страницах появляется отступ слева не могу понять почему-->
                 <div>
                   <li>
                     <a class="padding_header" href="index.html">
@@ -40,56 +39,59 @@
                 </div>
               </div>
               <div class="header_right">
-                <div class="header_right_menu_lk_basket">
-                  <div class="mega_box_menu">
-                    <details class="butoon_menu">
-                      <summary>
-                        <img
-                          class="menu_img"
-                          src="img/img_menu.svg"
-                          alt="menu"
-                        />
-                      </summary>
-                      <div class="mega_item box_shadow_menu">
-                        <h3 class="mega_heading">MAN</h3>
-                        <a class="mega_link" href="#">Accessories</a>
-                        <a class="mega_link" href="#">Bags</a>
-                        <a class="mega_link" href="#">Denim</a>
-                        <a class="mega_link" href="#">T-Shirts</a>
+                <nav class="header_right">
+                  <div class="header_right_menu_lk_basket">
+                    <div class="mega_box_menu">
+                      <details class="butoon_menu">
+                        <summary>
+                          <img
+                            class="menu_img"
+                            src="img/img_menu.svg"
+                            alt="menu"
+                          />
+                        </summary>
+                        <div class="mega_item box_shadow_menu">
+                          <h3 class="menu_head">MENU</h3>
+                          <h3 class="mega_heading">MAN</h3>
+                          <a class="mega_link" href="#">Accessories</a>
+                          <a class="mega_link" href="#">Bags</a>
+                          <a class="mega_link" href="#">Denim</a>
+                          <a class="mega_link" href="#">T-Shirts</a>
 
-                        <h3 class="mega_heading">WOMAN</h3>
-                        <a class="mega_link" href="#">Accessories</a>
-                        <a class="mega_link" href="#">Jackets & Coats</a>
-                        <a class="mega_link" href="#">Polos</a>
-                        <a class="mega_link" href="#">T-Shirts</a>
-                        <a class="mega_link" href="#">Shirts</a>
+                          <h3 class="mega_heading">WOMAN</h3>
+                          <a class="mega_link" href="#">Accessories</a>
+                          <a class="mega_link" href="#">Jackets & Coats</a>
+                          <a class="mega_link" href="#">Polos</a>
+                          <a class="mega_link" href="#">T-Shirts</a>
+                          <a class="mega_link" href="#">Shirts</a>
 
-                        <h3 class="mega_heading">KIDS</h3>
-                        <a class="mega_link" href="#">Accessories</a>
-                        <a class="mega_link" href="#">Jackets & Coats</a>
-                        <a class="mega_link" href="#">Polos</a>
-                        <a class="mega_link" href="#">T-Shirts</a>
-                        <a class="mega_link" href="#">Shirts</a>
-                        <a class="mega_link" href="#">Bags</a>
-                      </div>
-                    </details>
+                          <h3 class="mega_heading">KIDS</h3>
+                          <a class="mega_link" href="#">Accessories</a>
+                          <a class="mega_link" href="#">Jackets & Coats</a>
+                          <a class="mega_link" href="#">Polos</a>
+                          <a class="mega_link" href="#">T-Shirts</a>
+                          <a class="mega_link" href="#">Shirts</a>
+                          <a class="mega_link" href="#">Bags</a>
+                        </div>
+                      </details>
+                    </div>
                   </div>
-                </div>
-                <div class="header_right_menu_lk_basket">
-                  <a class="padding_header" href="registration.html">
-                    <img src="img/lk.svg" alt="lk" />
-                  </a>
-                </div>
-                <div class="header_right_menu_lk_basket">
-                  <a class="padding_header" href="card.html">
-                    <img src="img/basket.svg" alt="basket" />
-                  </a>
-                </div>
+                  <div class="header_right_menu_lk_basket">
+                    <a class="padding_header" href="registration.html">
+                      <img src="img/lk.svg" alt="lk" />
+                    </a>
+                  </div>
+                  <div class="header_right_menu_lk_basket">
+                    <a class="padding_header" href="card.html">
+                      <img src="img/basket.svg" alt="basket" />
+                    </a>
+                  </div>
+                </nav>
               </div>
             </div>
           </div>
         </div>
-        <!-- заголовок страницы ЗДЕСЬ ПОЧЕМУ-ТО ВОЗНИКАЕТ ВЕРХНИЙ ОТСТУП !!! -->
+        <!-- заголовок страницы -->
         <div class="new">
           <div class="crumbs conteiner">
             <div>
@@ -108,10 +110,9 @@
             </nav>
           </div>
         </div>
-        <!-- ЗДЕСЬ ДОЛЖЕН БЫТЬ ФИЛЬТР С ВЫПАДАШКАМИ -->
-        <!-- Контейнер с миникарточками товаров -->
+
         <div class="conteiner">
-          <div class="filter">
+          <nav class="filter">
             <div class="filter_left filter_padding">
               <details class="details filter_left">
                 <summary>
@@ -153,7 +154,6 @@
                     <summary>
                       <span class="details_span_filter">DESIGNER</span>
                     </summary>
-
                     <a href="#">Accessories</a>
                     <a href="#">Denim</a>
                     <a href="#">Hoodies & Sweatshirts</a>
@@ -235,7 +235,7 @@
                 </div>
               </details>
             </div>
-          </div>
+          </nav>
           <!-- </div> -->
           <!-- сделать корзины на карточках товара -->
           <div class="articles_block">
@@ -313,7 +313,7 @@
                 </div>
               </a>
             </div>
-            <div class="scroll_bar">
+            <nav class="scroll_bar">
               <ul class="bar_list conteiner">
                 <li><a class="dontactive" href="#">&lt;</a></li>
                 <li><a class="active" href="#">1</a></li>
@@ -325,7 +325,7 @@
                 <li><a class="dontactive" href="#">20</a></li>
                 <li><a class="dontactive" href="#">&gt;</a></li>
               </ul>
-            </div>
+            </nav>
           </div>
         </div>
       </div>
