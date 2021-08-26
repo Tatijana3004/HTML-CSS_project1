@@ -96,6 +96,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+summary {
+  list-style-type: none;
+}
 
 .butoon_menu a {
   font-size: 14px;
@@ -171,6 +174,7 @@ body {
   align-items: center;
 
 }
+
 .top_baner_heding a {
   text-decoration: none;
   font-weight: 900;
@@ -632,6 +636,11 @@ details[open] summary {
 .details_span_filter_right {
   margin-right: 45px;
 }
+.details_span_filter_right:after {
+  content: "∨";
+  padding-left: 10px;
+}
+
 .mega_box_filter_right {
   background: #ffffff;
 }
