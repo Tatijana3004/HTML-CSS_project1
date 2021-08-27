@@ -271,7 +271,7 @@ summary {
   line-height: 17px;
   color: #9f9f9f;
   text-align: center;
-  padding-bottom: 18px;
+  margin: 0px;
 }
 
 .article {
