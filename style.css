@@ -292,9 +292,18 @@ summary {
   text-decoration: none;
 }
 
-.article:hover .article_img{
+.article:hover 
+.article_img{
   filter: brightness(0.3);
   transition: filter 0.3s;
+}
+.article:hover 
+.article_desc {
+  color: #f16d7f;
+}
+.article:hover
+.article_content  {
+  color: #f16d7f;
 }
 
 .article:hover .article_add_box {
@@ -819,6 +828,12 @@ details[open] summary {
   color: #ffffff;
   transition: background 0.3s;
   transition: color 0.3s;
+  transform: scale(1.05);
+  box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+}
+
+.filter_product {
+  justify-content: space-between;
 }
 
 /* СТРАНИЦА РЕГИСТРАЦИИ */
