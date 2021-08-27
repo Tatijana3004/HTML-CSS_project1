@@ -250,22 +250,16 @@ summary {
 }
 
 /* ГРУППА КАРТОЧЕК ТОВАРОВ (на всех страницах)*/
-.articles_block_inside {
+.articles_box_inside {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 48px;
 }
 
-.articles_block_inside a {
-  text-decoration: none;
-}
-/* .articles_block_inside:hover {
-  color: #f16d7f;
-} */
-
 .heading_articles_block {
   font-size: 30px;
+  line-height: 36px;
   color: #222222;
   text-align: center;
   margin-top: 96px;
@@ -274,6 +268,7 @@ summary {
 
 .content_articles_block {
   font-size: 14px;
+  line-height: 17px;
   color: #9f9f9f;
   text-align: center;
   padding-bottom: 18px;
@@ -284,42 +279,88 @@ summary {
   padding-bottom: 20px;
   background: #f8f8f8;
   margin-top: 30px;
+  position: relative;
 }
-
 .article:hover {
   transform: scale(1.05);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   transition: box-shadow 0.3s;
 }
 
-.article img:hover {
+.article_link {
+  display: block;
+  text-decoration: none;
+}
+
+.article:hover .article_img{
   filter: brightness(0.3);
   transition: filter 0.3s;
 }
 
-.article h4 {
+.article:hover .article_add_box {
+  display: flex;
+}
+.article_img {
+  width: 100%;
+}
+
+.article_txt {
+  padding: 25px 17px 17px 17px;
+}
+.article_desc {
   font-size: 13px;
-  color: black;
-  margin-top: 26px;
-  margin-bottom: 13px;
-  padding-left: 17px;
-  padding-right: 17px;
+  line-height: 16px;
+  color: #000000;
+  padding-bottom: 13px;
+  margin: 0px;
+  text-transform: uppercase;
 }
 
 .article_content {
-  font-weight: 300;
   font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
   color: #5d5d5d;
-  padding-left: 17px;
-  padding-right: 17px;
+  margin: 0px;
 }
 
 .article_price {
   font-size: 16px;
+  line-height: 19px;
   color: #f16d7f;
-  margin-top: 18px;
-  padding-left: 17px;
-  padding-right: 17px;
+  padding-top: 18px;
+  margin: 0px;
+  text-transform: uppercase;
+}
+.article_add_box {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  top: 188px;
+  width: 100%;
+}
+.article_add_button {
+  display: flex;
+  align-items: center;
+  padding: 11px;
+  border: 1px solid #FFFFFF;
+  text-decoration: none;
+}
+
+.article_add_button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0px 10px #FFFFFF;
+  transition: box-shadow 0.3s;
+}
+.article_add_button img {
+  padding-right: 11px;
+}
+
+.article_add_txt {
+  margin: 0px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
 }
 
 .button_product {
@@ -341,8 +382,8 @@ summary {
   background: #f16d7f;
   border: 1px solid #f16d7f;
   color: #ffffff;
-  transition: color 0.3s;
-  transition: background 0.3s;
+  transform: scale(1.05);
+  box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
 }
 /* ПОДВАЛ САЙТА (на всех страницах) */
 .footer_top {
