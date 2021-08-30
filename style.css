@@ -534,9 +534,13 @@ summary {
   font-size: 20px;
 }
 
-.fa-facebook {
+.footer_seti i {
   font-family: FontAwesome;
   color: #000000;
+}
+.footer_seti i:hover {
+  font-family: FontAwesome;
+  color: #ffffff;;
 }
 
 .footer_seti:hover {
@@ -702,7 +706,6 @@ details[open] summary {
   margin: 10px;
 }
 .scroll_bar {
-  width: 1140px;
   display: flex;
 }
 
@@ -733,6 +736,11 @@ details[open] summary {
 .dontactive {
   color: #636363;
 }
+
+.dontactive:hover {
+  color: #f16d7f;
+}
+
 .bar_list a:hover {
   color: #f16d7f;
   transition: color 0.3s;
