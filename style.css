@@ -4,10 +4,11 @@
   margin: 0;
   padding: 0;
   outline: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
   min-height: 100%;
 }
 
@@ -210,7 +211,7 @@ summary {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  /* width: 30%; */
   position: relative;
 }
 .section_block:hover {
@@ -328,7 +329,7 @@ summary {
 .article_content {
   font-size: 14px;
   line-height: 17px;
-  font-weight: 300;
+  /*font-weight: 300;*/
   color: #5d5d5d;
   margin: 0px;
 }
@@ -587,7 +588,7 @@ summary {
 }
 
 .breadcrumb a {
-  font-weight: 300;
+  /*font-weight: 300;*/
   font-size: 14px;
   line-height: 17px;
   color: #636363;
@@ -619,6 +620,7 @@ summary {
   align-items: flex-start;
   justify-content: flex-start;
   position: absolute;
+  z-index: 800;
 }
 
 .filter a {
@@ -725,7 +727,7 @@ details[open] summary {
 .bar_list a {
   text-decoration: none;
   padding: 5px;
-  font-weight: 300;
+  /*font-weight: 300;*/
   font-size: 16px;
   line-height: 19px;
 }
@@ -780,7 +782,7 @@ details[open] summary {
 
 .heading_product {
   text-align: center;
-  font-weight: 300;
+  /*font-weight: 300;*/
   width: 555px;
 }
 
@@ -811,7 +813,7 @@ details[open] summary {
 }
 
 .product_price {
-  font-weight: 300;
+  /*font-weight: 300;*/
   font-size: 24px;
   line-height: 29px;
   color: #f16d7f;
@@ -860,7 +862,7 @@ details[open] summary {
 
 .name_input {
   margin-bottom: 20px;
-  font-weight: 300;
+  /*font-weight: 300;*/
   font-size: 16px;
   line-height: 19px;
   color: #222222;
@@ -878,7 +880,7 @@ details[open] summary {
 }
 
 .forma_registration p {
-  font-weight: 300;
+  /*font-weight: 300;*/
   font-size: 13px;
   line-height: 16px;
   color: #b1b1b1;
@@ -902,7 +904,7 @@ details[open] summary {
 }
 
 .text_registration {
-  font-weight: 300;
+  /*font-weight: 300;*/
   font-size: 24px;
   line-height: 29px;
   color: #000000;
