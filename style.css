@@ -586,7 +586,6 @@ summary {
 }
 
 .breadcrumb a {
-  /*font-weight: 300;*/
   font-size: 14px;
   line-height: 17px;
   color: #636363;
@@ -630,7 +629,6 @@ summary {
 }
 
 .filter a:hover {
-  /* не меняется цвет картинки у фильтра */
   color: #f16d7f;
   transition: color 0.3s;
 }
@@ -639,7 +637,6 @@ summary {
   width: 360px;
   margin-right: 30px;
   background: #ffffff;
-
 }
 
 .filter_right {
@@ -705,6 +702,16 @@ details[open] summary {
 .mega_link_filter_right input {
   margin: 10px;
 }
+
+.range {
+  display: flex;
+  
+}
+
+.color {
+  margin-bottom: 5px;
+}
+
 .scroll_bar {
   display: flex;
 }

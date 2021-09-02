@@ -49,9 +49,17 @@
                 </div>
                 <div class="search">
                   <form class="search">
-                    <input type="text" />
+                    <input id="search" list="dl_search" type="text" />
+                    <datalist id="dl_search"> 
+                      <option label="MAN" value="MAN"></option>
+                      <option label="Bags" value="Bags"></option>
+                      <option label="Denim" value="Denim"></option>
+                      <option label="WOMAN" value="WOMAN"></option>
+                      <option label="Accessories" value="Accessories"></option>
+                      <option label="Polos" value="Polos"></option>
+                    </datalist>
                     <button type="submit">
-                      <img src="img/search.svg" alt="search" />
+                      <label for="search"><img src="img/search.svg" alt="search"></label>
                     </button>
                   </form>
                 </div>

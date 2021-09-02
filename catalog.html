@@ -49,9 +49,17 @@
                 </div>
                 <div class="search">
                   <form class="search">
-                    <input type="text" />
+                    <input id="search" list="dl_search" type="text" />
+                    <datalist id="dl_search"> 
+                      <option label="MAN" value="MAN"></option>
+                      <option label="Bags" value="Bags"></option>
+                      <option label="Denim" value="Denim"></option>
+                      <option label="WOMAN" value="WOMAN"></option>
+                      <option label="Accessories" value="Accessories"></option>
+                      <option label="Polos" value="Polos"></option>
+                    </datalist>
                     <button type="submit">
-                      <img src="img/search.svg" alt="search" />
+                      <label for="search"><img src="img/search.svg" alt="search"></label>
                     </button>
                   </form>
                 </div>
@@ -128,7 +136,6 @@
             </nav>
           </div>
         </div>
-
         <div class="conteiner">
           <nav class="filter">
             <div class="filter_left filter_padding">
@@ -186,7 +193,11 @@
                 </div>
               </details>
             </div>
-            <div class="details filter_right_max">
+            <div
+              class="details filter_right_max"
+              oninput="result.value(range.value)"
+              action="#"
+            >
               <details class="details filter_right">
                 <summary class="details_span_filter_right">
                   TRENDING NOW
@@ -252,6 +263,23 @@
                   </a>
                 </div>
               </details>
+              <!-- Range не работает, не выводит результат -->
+              <div>
+                <div class="range">
+                  <label for="range">Range</label>
+                  <input id="range" type="range" value="10" step="0.1">
+                  <p>
+                    Result:
+                    <output name="result" for="range"></output>
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="color">
+                  <!-- <label for="color">Color: </label> -->
+                  <input type="color">
+                </div>
+              </div>
             </div>
           </nav>
           <section class="articles_box">
