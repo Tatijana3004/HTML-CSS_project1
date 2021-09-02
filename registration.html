@@ -50,7 +50,8 @@
                 <div class="search">
                   <form class="search">
                     <input id="search" list="dl_search" type="text" />
-                    <datalist id="dl_search"> 
+                    <datalist id="dl_search">
+                      <!-- Данный datalist не дает поиск по сайту -->
                       <option label="MAN" value="man"></option>
                       <option label="Bags" value="bags"></option>
                       <option label="Denim" value="denim"></option>
@@ -59,10 +60,12 @@
                       <option label="Polos" value="polos"></option>
                     </datalist>
                     <button type="submit">
-                      <label for="search"><img src="img/search.svg" alt="search"></label>
+                      <label for="search">
+                        <img src="img/search.svg" alt="search" />
+                      </label>
                     </button>
                   </form>
-              </div>
+                </div>
               </div>
               <div class="header_right">
                 <nav class="header_right">
@@ -136,7 +139,7 @@
               <input
                 class="input text_input"
                 type="text"
-                placeholder="Last Name" 
+                placeholder="Last Name"
               />
               <br />
               <div class="form_radio">
