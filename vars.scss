@@ -1,0 +1,20 @@
+// переменные
+$color_pink: #f16d7f;
+$color_dark_grey: #222222;
+$color_black: #000000;
+$color_white: #ffffff;
+$color_purple_blue: #222224;
+// 
+
+// подключение через @extend
+.d-flex_jc-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+// мексит 
+@mixin txt ($fs, $lh) {
+    font-size: $fs;
+    line-height: $lh;
+  }
+    
+    

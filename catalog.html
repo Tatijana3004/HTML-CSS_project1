@@ -197,10 +197,7 @@
               </details>
             </div>
             <div
-              class="details filter_right_max"
-              oninput="result.value(range.value)"
-              action="#"
-            >
+              class="details filter_right_max">
               <details class="details filter_right">
                 <summary class="details_span_filter_right">
                   TRENDING NOW
@@ -267,22 +264,23 @@
                 </div>
               </details>
               <!-- Range не работает, не выводит результат -->
-              <div>
-                <div class="range">
+              <details class="details filter_right" oninput="result.value(range.value)" action="#">
+                <summary class="details_span_filter_right range">Range</summary>
+                <div class="box-shadow mega_link_filter_right">
                   <label for="range">Range</label>
                   <input id="range" type="range" value="10" step="0.1" />
-                  <p>
+                  <p class="mega_link_filter_right" >
                     Result:
                     <output name="result" for="range"></output>
                   </p>
                 </div>
-              </div>
-              <div>
-                <div class="color">
-                  <!-- <label for="color">Color: </label> -->
-                  <input type="color" />
+              </details>
+              <details class="details filter_right">
+                <summary class="details_span_filter_right">color</summary>
+                <div class="box-shadow mega_link_filter_right">
+                  <input type="color"/>
                 </div>
-              </div>
+              </details>
             </div>
           </nav>
           <section class="articles_box">

@@ -1,6 +1,12 @@
+// мексиn
+@mixin txt ($fs, $lh) {
+  font-size: $fs;
+  line-height: $lh;
+}
 .filter {
-    font-size: 14px;
-    line-height: 17px;
+  @mixin txt (14px, 17px);
+  // font-size: 14px;
+  //   line-height: 17px;
     color: $color_black;
     display: flex;
     align-items: flex-start;
@@ -32,6 +38,7 @@
     @extend .d-flex_jc-space-between;
     color: #6f6e6e;
     position: relative;
+    text-transform: uppercase;
   }
   
   .details {
@@ -67,8 +74,7 @@
   
   .details_open_filter {
     color: $color_pink;
-    font-size: 14px;
-    line-height: 17px;
+    @include  txt (14px, 17px);
   }
   
   .details_span_filter_right {
@@ -92,6 +98,7 @@
   
   .range {
     display: flex;
+    padding-right: 100px;
   }
   
   .color {

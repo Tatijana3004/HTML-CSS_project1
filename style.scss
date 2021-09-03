@@ -7,17 +7,13 @@
   font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
+// Фрагменты Sass подключенные при помощи директивы
+// общие переменные
+@import "vars";
+// ФИЛЬТРЫ страницы каталог
+@import "filter";
 
-$color_pink: #f16d7f;
-$color_dark_grey: #222222;
-$color_black: #000000;
-$color_white: #ffffff;
-$color_purple_blue: #222224;
 
-.d-flex_jc-space-between {
-  display: flex;
-  justify-content: space-between;
-}
 
 body {
   min-height: 100%;
@@ -111,8 +107,7 @@ summary {
 }
 
 .butoon_menu a {
-  font-size: 14px;
-  line-height: 17px;
+  @mixin txt (14px, 17px);
   color: #6f6e6e;
   padding-left: 20px;
   transition: color 0.3s;
@@ -139,13 +134,11 @@ summary {
 .menu_head {
   color: $color_black;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
+  @mixin txt (14px, 17px);
 }
 
 .mega_heading {
-  font-size: 14px;
-  line-height: 17px;
+  @mixin txt (14px, 17px);
   color: $color_pink;
   text-transform: uppercase;
   margin-top: 20px;
@@ -267,8 +260,7 @@ summary {
 }
 
 .heading_articles_block {
-  font-size: 30px;
-  line-height: 36px;
+  @mixin txt (30px, 36px);
   color: $color_dark_grey;
   text-align: center;
   margin-top: 96px;
@@ -276,8 +268,7 @@ summary {
 }
 
 .content_articles_block {
-  font-size: 14px;
-  line-height: 17px;
+  @mixin txt (14px, 17px);
   color: #9f9f9f;
   text-align: center;
   margin: 0px;
@@ -326,8 +317,7 @@ summary {
   padding: 25px 17px 17px 17px;
 }
 .article_desc {
-  font-size: 13px;
-  line-height: 16px;
+  @mixin txt (13px, 16px);
   color: $color_black;
   padding-bottom: 13px;
   margin: 0px;
@@ -613,8 +603,7 @@ summary {
   background: $color_white;
 }
 
-// импортирование файла с настройками фильтра
-@import "filter";
+
 
 .scroll_bar {
   display: flex;
