@@ -6,4 +6,22 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+.box-sh {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.transition {
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+}
+
+.transform {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  z-index: 1000;
+}
 /*# sourceMappingURL=vars.css.map */
